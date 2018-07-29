@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackround"
+        tools:context=".ui.registration.RegistrationActivity">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/museo_sans_300"
+            android:gravity="center"
+            android:text="@string/activity_registration_welcome_to_opinions"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/museo_sans_700"
+            android:gravity="center"
+            android:text="@string/activity_registration_description"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/login_edit_text_background"
+            android:drawableStart="@drawable/ic_user"
+            android:fontFamily="@font/museo_sans_700"
+            android:gravity="center"
+            android:hint="Create login"
+            android:maxLength="20"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/login_et_cursor_background"
+            android:theme="@style/EditTextCustomStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_edit_text_background"
+            android:drawableStart="@drawable/ic_user"
+            android:fontFamily="@font/museo_sans_700"
+            android:gravity="center"
+            android:hint="Create password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/login_et_cursor_background"
+            android:theme="@style/EditTextCustomStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_edit_text_background"
+            android:drawableStart="@drawable/ic_user"
+            android:fontFamily="@font/museo_sans_700"
+            android:gravity="center"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/login_et_cursor_background"
+            android:theme="@style/EditTextCustomStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_registration"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/registration_btn_background"
+            android:fontFamily="@font/museo_sans_700"
+            android:text="Registration"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/password"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

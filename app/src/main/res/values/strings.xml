@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RateMe</string>
+    <string name="activity_registration_welcome_to_opinions">Welcome to Opinions</string>
+    <string name="activity_registration_description">Share your opinion and get \nsomeone else absolutely anonymous</string>
+</resources>
