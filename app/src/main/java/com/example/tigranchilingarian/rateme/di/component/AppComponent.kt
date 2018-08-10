@@ -17,4 +17,8 @@ interface AppComponent {
     fun plus(registrationModule: RegistrationModule): RegistrationComponent
 
     fun plus(splashScreenModule: SplashScreenModule): SplashScreenComponent
+
+    fun plus(homeModule: HomeModule): HomeComponent
+
+    fun plus(loginModule: LoginModule): LoginComponent
 }

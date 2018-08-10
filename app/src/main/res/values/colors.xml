@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="mainColor">#FF40ECFF</color>
-    <color name="mainBackround">#eaeaea</color>
+    <color name="mainBackround">#131A20</color>
     <color name="mainBtnColor">#00b4ff</color>
+    <color name="btnLogInColor">#673AB7</color>
 </resources>

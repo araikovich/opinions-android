@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/mainBackround"
-        tools:context=".ui.registration.RegistrationActivity">
+        tools:context=".ui.login.LoginActivity">
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/title"
@@ -48,22 +48,24 @@
             android:layout_height="45dp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="130dp"
             android:background="@drawable/login_edit_text_background"
             android:drawableStart="@drawable/ic_user"
             android:fontFamily="@font/museo_sans_700"
             android:gravity="center"
-            android:hint="Create login"
+            android:hint="login"
             android:textColorHint="@android:color/white"
+            android:inputType="textPassword"
             android:maxLength="20"
             android:paddingEnd="25dp"
             android:paddingStart="25dp"
             android:singleLine="true"
             android:textCursorDrawable="@drawable/login_et_cursor_background"
             android:theme="@style/EditTextCustomStyle"
+            app:layout_constraintTop_toBottomOf="@+id/description"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/description" />
+            app:layout_constraintStart_toStartOf="parent" />
+
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/password"
@@ -76,7 +78,7 @@
             android:drawableStart="@drawable/ic_user"
             android:fontFamily="@font/museo_sans_700"
             android:gravity="center"
-            android:hint="Create password"
+            android:hint="Password"
             android:textColorHint="@android:color/white"
             android:inputType="textPassword"
             android:maxLength="20"
@@ -89,29 +91,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/login" />
 
-        <android.support.v7.widget.AppCompatEditText
-            android:id="@+id/confirm_password"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/login_edit_text_background"
-            android:drawableStart="@drawable/ic_user"
-            android:fontFamily="@font/museo_sans_700"
-            android:gravity="center"
-            android:hint="Confirm password"
-            android:textColorHint="@android:color/white"
-            android:inputType="textPassword"
-            android:maxLength="20"
-            android:paddingEnd="25dp"
-            android:paddingStart="25dp"
-            android:singleLine="true"
-            android:textCursorDrawable="@drawable/login_et_cursor_background"
-            android:theme="@style/EditTextCustomStyle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password" />
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_registration"
@@ -120,13 +99,14 @@
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/btn_background_registration"
+            android:background="@drawable/btn_background_gradient"
             android:fontFamily="@font/museo_sans_700"
-            android:text="Registration"
+            android:text="Sign in"
             android:textColor="@android:color/white"
             android:textSize="17dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/password"
-            app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
     </android.support.constraint.ConstraintLayout>
 </layout>
