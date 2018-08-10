@@ -7,6 +7,7 @@ import android.view.WindowManager
 import com.example.tigranchilingarian.rateme.R
 import com.example.tigranchilingarian.rateme.databinding.ActivityRegistrationBinding
 import com.example.tigranchilingarian.rateme.di.module.RegistrationModule
+import com.example.tigranchilingarian.rateme.ui.core.BaseActivity
 import com.example.tigranchilingarian.rateme.ui.core.BaseActivityWithPresenter
 import com.example.tigranchilingarian.rateme.ui.core.Layout
 import com.example.tigranchilingarian.rateme.ui.core.WithBinding
@@ -15,6 +16,12 @@ import com.example.tigranchilingarian.rateme.ui.core.WithBinding
 @Layout(id = R.layout.activity_registration)
 @WithBinding
 class RegistrationActivity : BaseActivityWithPresenter<RegistrationPresenter.Screen, RegistrationPresenter>(), RegistrationPresenter.Screen {
+
+    companion object {
+        fun start(context: BaseActivity) {
+            context.startActivity(RegistrationActivity::class.java, true)
+        }
+    }
 
     private val component by lazy { app.component.plus(RegistrationModule(this)) }
 
